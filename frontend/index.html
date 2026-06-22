@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#6366f1" />
+    <title>Devfolio AI — Build Your Resume & Portfolio Website in Minutes</title>
+    <meta name="description" content="Create ATS-friendly resumes and beautiful portfolio websites from one platform. Powered by AI. Used by 10,000+ professionals worldwide." />
+    <meta name="keywords" content="resume builder, portfolio website, AI resume, ATS resume, devfolio, developer portfolio, free resume maker" />
+    <meta name="author" content="Devfolio AI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Devfolio AI — Build Your Resume & Portfolio in Minutes" />
+    <meta property="og:description" content="Create ATS-friendly resumes and beautiful portfolio websites from one platform." />
+    <meta property="og:url" content="https://devfolio.ai/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Devfolio AI — Resume & Portfolio Builder" />
+    <meta name="twitter:description" content="Create ATS-friendly resumes and beautiful portfolio websites from one platform." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script>
+      // Apply theme before first paint to prevent flash
+      (function() {
+        const stored = localStorage.getItem('devfolio-theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
