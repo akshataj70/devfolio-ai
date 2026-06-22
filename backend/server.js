@@ -9,8 +9,18 @@ dotenv.config();
 const app = express();
 
 // Middleware
+// app.use(cors({
+//   origin: ['http://localhost:5173', 'http://localhost:3000'],
+//   credentials: true
+// }));
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:3000',
+    'https://devfolio-ai-two.vercel.app',
+    'https://devfolio-ai.vercel.app',
+    'https://devfolio-ai-nine.vercel.app'
+  ],
   credentials: true
 }));
 app.use(express.json());
